@@ -1,5 +1,5 @@
-import GridSection from "@/components/main/GridSection";
-import HeroSection from "@/components/main/HeroSection";
+import GridSection from '@/components/main/GridSection';
+import HeroSection from '@/components/main/HeroSection';
 
 export default function Home() {
   return (
