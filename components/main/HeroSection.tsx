@@ -31,14 +31,14 @@ function HeroSection() {
             >
                 <motion.p className="font-bold text-4xl md:text-5xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
                     The
-                    <span className="text-red-500 dark:text-red-900">{` White `}</span>
+                    <span className="text-red-500 dark:text-red-900 font-bold">{` White `}</span>
                     Collar Group
                 </motion.p>
 
                 <div className="flex justify-center items-center text-center">
                     <div className="mx-auto text-neutral-200 dark:text-neutral-600">
                         We can help you with
-                        <FlipWords words={words} className="text-red-500 dark:text-red-900" />
+                        <FlipWords words={words} className="font-bold text-red-500 dark:text-red-900" />
                     </div>
                 </div>
 
