@@ -3,6 +3,7 @@ import React from "react";
 import { ImagesSlider } from "../ui/images-slider";
 import { motion } from "framer-motion";
 import { FlipWords } from "../ui/flip-words";
+import { FaInstagram, FaTwitter, FaFacebook, FaLinkedinIn } from "react-icons/fa";
 
 function HeroSection() {
     const words = ["Election Campaigns", "Advertising", "Ad Films", "Portfolios", "Photo Shoots"];
@@ -30,7 +31,7 @@ function HeroSection() {
                 <motion.p className="font-bold text-4xl md:text-5xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
                     The
                     <span className="text-orange-500 dark:text-orange-900">{` Random `}</span>
-                    Productions
+                    Studios
                 </motion.p>
 
                 <div className="flex justify-center items-center">
@@ -38,6 +39,13 @@ function HeroSection() {
                         We can help you with
                         <FlipWords words={words} className="text-orange-500 dark:text-orange-900" />
                     </div>
+                </div>
+
+                <div className="flex py-10 gap-4 items-center">
+                    <FaFacebook className="h-6 w-6 text-white cursor-pointer hover:text-blue-600" />
+                    <FaTwitter className="h-6 w-6 text-white cursor-pointer hover:text-blue-400" />
+                    <FaLinkedinIn className="h-6 w-6 text-white cursor-pointer hover:text-blue-800" />
+                    <FaInstagram className="h-6 w-6 text-white cursor-pointer hover:text-fuchsia-300" />
                 </div>
             </motion.div>
         </ImagesSlider>
