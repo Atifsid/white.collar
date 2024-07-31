@@ -4,7 +4,7 @@ import { LayoutGrid } from '../ui/layout-grid';
 function GridSection() {
   return (
     <div className="h-screen py-14 w-full">
-      <div className='underline underline-offset-8 decoration-2 decoration-orange-500 text-3xl px-16 font-bold text-white'>Our Work</div>
+      <div id='our-work' className='underline underline-offset-8 decoration-2 decoration-red-500 text-3xl px-16 font-bold text-white'>Our Work</div>
       <LayoutGrid cards={cards} />
     </div>
   );
