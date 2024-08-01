@@ -8,6 +8,7 @@ import {
   FaTwitter,
   FaFacebook,
   FaLinkedinIn,
+  FaYoutube,
 } from 'react-icons/fa';
 import { IoArrowDownCircleOutline } from 'react-icons/io5';
 
@@ -61,12 +62,13 @@ function HeroSection() {
           <FaTwitter className='h-6 w-6 cursor-pointer text-white hover:text-blue-400' />
           <FaLinkedinIn className='h-6 w-6 cursor-pointer text-white hover:text-blue-800' />
           <FaInstagram className='h-6 w-6 cursor-pointer text-white hover:text-fuchsia-300' />
+          <FaYoutube className='h-6 w-6 cursor-pointer text-white hover:text-red-600' />
         </div>
 
         <button
           type='button'
           className='my-6 animate-bounce cursor-pointer'
-          onClick={() => document.getElementById('our-work')?.scrollIntoView()}
+          onClick={() => document.getElementById('services')?.scrollIntoView()}
         >
           <IoArrowDownCircleOutline className='h-12 w-12 text-red-500' />
         </button>
