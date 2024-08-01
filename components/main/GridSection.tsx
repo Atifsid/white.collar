@@ -1,16 +1,16 @@
 import React from 'react';
-import { LayoutGrid } from '../ui/layout-grid';
+import { GridLayout } from './GridLayout';
 
 function GridSection() {
   return (
     <div className='h-screen w-full'>
       <div
-        id='our-work'
-        className='mb-4 mt-14 px-16 text-center text-3xl font-bold text-white underline decoration-red-500 decoration-2 underline-offset-8'
+        id='services'
+        className='my-14 px-16 text-center text-3xl font-bold text-white underline decoration-red-500 decoration-2 underline-offset-8'
       >
-        Our Work
+        Services
       </div>
-      <LayoutGrid cards={cards} />
+      <GridLayout />
     </div>
   );
 }
