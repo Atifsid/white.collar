@@ -11,7 +11,7 @@
     top: 0;
     z-index: 1000;
     padding: 12px 0px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .content {
@@ -19,4 +19,46 @@
     justify-content: space-between;
     align-items: center;
     width: 60%;
+}
+
+.menuButton {
+    display: none;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .navLink {
+        display: none;
+    }
+
+    .menuButton {
+        display: block;
+    }
+
+    .menuOpen .navLink {
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .navContainer {
+        position: absolute;
+        top: 74px;
+        right: 0;
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.8);
+        border-top: 1px solid white;
+    }
+
+    .content {
+        width: 80%;
+    }
 }
