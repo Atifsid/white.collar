@@ -3,6 +3,7 @@
     color: #fff;
     padding: 50px 20px;
     text-align: center;
+    position: relative;
 }
 
 .container {
@@ -98,5 +99,31 @@
 
     .motto {
         font-size: 1rem;
+    }
+
+    .infoShape {
+        display: none;
+    }
+}
+
+.infoShape {
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    z-index: 7;
+    animation: bounce 1.8s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+
+    50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
     }
 }

@@ -1,4 +1,6 @@
 import styles from './AboutUs.module.css';
+import infoImg from '../../public/static/images/info.png';
+import Image from 'next/image';
 
 export default function AboutUs() {
     return (
@@ -15,6 +17,9 @@ export default function AboutUs() {
                     professionals across India.
                 </p>
                 <p className={styles.motto}>WE JUST WORK TO WIN.</p>
+            </div>
+            <div className={`${styles.infoShape}`}>
+                <Image src={infoImg} height={100} width={100} alt='msg' />
             </div>
         </section>
     );

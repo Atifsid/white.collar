@@ -16,3 +16,15 @@
     background: linear-gradient(to right, #EF4444, transparent);
     margin: 10px auto 0;
 }
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1rem;
+    }
+}

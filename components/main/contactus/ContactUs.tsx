@@ -2,6 +2,9 @@
 
 import { useState } from 'react';
 import styles from './ContactUs.module.css';
+import rocketImg from '../../../public/static/images/plane.png';
+import msgImg from '../../../public/static/images/msg.png';
+import Image from 'next/image';
 
 const ContactUs = () => {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -82,6 +85,12 @@ const ContactUs = () => {
                     </div>
                 </form>
                 {formStatus && <p className={styles.formStatus}>{formStatus}</p>}
+            </div>
+            <div className={`${styles.rocketShape}`}>
+                <Image src={rocketImg} height={300} width={300} alt='rocket' />
+            </div>
+            <div className={`${styles.msgShape}`}>
+                <Image src={msgImg} height={150} width={150} alt='msg' />
             </div>
         </section>
     );

@@ -1,4 +1,5 @@
 .contactUsSection {
+    position: relative;
     background: #000;
     color: #fff;
     padding: 50px 20px;
@@ -129,6 +130,11 @@
         font-size: 1rem;
         padding: 12px 20px;
     }
+
+    .rocketShape,
+    .msgShape {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -156,5 +162,40 @@
 
     .formStatus {
         font-size: 1rem;
+    }
+
+    .rocketShape,
+    .msgShape {
+        display: none;
+    }
+}
+
+.rocketShape {
+    position: absolute;
+    top: 15%;
+    left: 1%;
+    z-index: 7;
+    animation: bounce 1.8s infinite;
+}
+
+.msgShape {
+    position: absolute;
+    bottom: 15%;
+    right: 8%;
+    z-index: 7;
+    animation: bounce 1.8s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+
+    50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
     }
 }
