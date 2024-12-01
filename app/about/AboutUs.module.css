@@ -1,0 +1,102 @@
+.aboutUs {
+    background: #000;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: #EF4444;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #EF4444;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    width: 15vh;
+    height: 2px;
+    background: linear-gradient(to right, #EF4444, transparent);
+    margin: 10px auto 0;
+}
+
+.paragraph {
+    color: #ddd;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.motto {
+    color: #EF4444;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 70%;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+
+    .paragraph {
+        font-size: 1rem;
+    }
+
+    .motto {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .paragraph {
+        font-size: 0.95rem;
+    }
+
+    .motto {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 95%;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .paragraph {
+        font-size: 0.9rem;
+    }
+
+    .motto {
+        font-size: 1rem;
+    }
+}

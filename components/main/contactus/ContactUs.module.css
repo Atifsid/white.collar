@@ -1,0 +1,160 @@
+.contactUsSection {
+    background: #000;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: #EF4444;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #EF4444;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    width: 20vh;
+    height: 2px;
+    background: linear-gradient(to right, #EF4444, transparent);
+    margin: 10px auto 0;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #333;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formGroup label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.input,
+.textarea {
+    background-color: #555;
+    border: 1px solid #444;
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus,
+.textarea:focus {
+    border-color: #ff0000;
+    outline: none;
+}
+
+.textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submitButton {
+    background-color: #ff0000;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: 600;
+}
+
+.submitButton:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+    /* Slight scaling effect on hover */
+}
+
+.submitButton:active {
+    background-color: #b30000;
+}
+
+.formStatus {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #00ff00;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .form {
+        padding: 20px;
+    }
+
+    .input,
+    .textarea {
+        font-size: 0.95rem;
+    }
+
+    .submitButton {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .form {
+        padding: 15px;
+    }
+
+    .input,
+    .textarea {
+        font-size: 0.9rem;
+    }
+
+    .submitButton {
+        font-size: 0.95rem;
+        padding: 10px 15px;
+    }
+
+    .formStatus {
+        font-size: 1rem;
+    }
+}

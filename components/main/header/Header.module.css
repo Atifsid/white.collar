@@ -1,0 +1,22 @@
+.navLink {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #F5F5F5;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.stickyHeader {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 12px 0px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}

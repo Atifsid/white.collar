@@ -1,0 +1,18 @@
+.title {
+    font-size: 1.5rem;
+    color: #EF4444;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #EF4444;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    width: 15vh;
+    height: 2px;
+    background: linear-gradient(to right, #EF4444, transparent);
+    margin: 10px auto 0;
+}
