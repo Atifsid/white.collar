@@ -4,6 +4,7 @@ import styles from './Header.module.css';
 import Image from 'next/image';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import logo from '../../../public/static/images/logo.jpeg';
 
 const Header: React.FC = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -17,10 +18,11 @@ const Header: React.FC = () => {
             <div className='flex justify-center'>
                 <div className={styles.content}>
                     <Image
-                        src={`https://img.icons8.com/?size=100&id=108544&format=png&color=000000`}
+                        src={logo}
                         height={50}
                         width={50}
                         alt={''}
+                        style={{ borderRadius: 12 }}
                     />
 
                     <div className={`${menuOpen ? `${styles.menuOpen} ${styles.navContainer}` : ''}`}>
@@ -34,7 +36,7 @@ const Header: React.FC = () => {
                             <a href="#contact-us" className={`${styles.navLink} hover:text-red-600`} onClick={hideMenu}>
                                 Contact Us
                             </a>
-                            <a href="#services" className={`${styles.navLink} hover:text-red-600`} onClick={hideMenu}>
+                            <a href="" className={`${styles.navLink} hover:text-red-600`} onClick={hideMenu}>
                                 Hire Us
                             </a>
                         </nav>
