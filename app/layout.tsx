@@ -19,8 +19,8 @@ const poppins = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'The Random Studios',
-  description: 'This a random description',
+  title: 'White Collar Group',
+  description: '',
 };
 
 export default function RootLayout({

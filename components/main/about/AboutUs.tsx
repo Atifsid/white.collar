@@ -1,5 +1,5 @@
 import styles from './AboutUs.module.css';
-import infoImg from '../../public/static/images/info.png';
+import infoImg from '../../../public/static/images/info.png';
 import Image from 'next/image';
 
 export default function AboutUs() {
