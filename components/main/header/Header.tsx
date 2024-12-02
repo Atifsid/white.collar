@@ -19,10 +19,8 @@ const Header: React.FC = () => {
                 <div className={styles.content}>
                     <Image
                         src={logo}
-                        height={50}
-                        width={50}
-                        alt={''}
-                        style={{ borderRadius: 12 }}
+                        alt={'logo'}
+                        className={styles.logo}
                     />
 
                     <div className={`${menuOpen ? `${styles.menuOpen} ${styles.navContainer}` : ''}`}>
@@ -43,7 +41,7 @@ const Header: React.FC = () => {
                     </div>
 
                     <button className={styles.menuButton} onClick={toggleMenu}>
-                        <FontAwesomeIcon icon={faBars} className="fas fa-bars" style={{ color: "white" }} />
+                        <FontAwesomeIcon icon={faBars} className={`fas fa-bars ${styles.menuIcon}`} style={{ color: "white" }} />
                     </button>
                 </div>
             </div>

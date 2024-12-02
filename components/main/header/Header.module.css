@@ -30,6 +30,12 @@
     cursor: pointer;
 }
 
+.logo {
+    border-radius: 12px;
+    width: 40px;
+    height: 40px;
+}
+
 @media (max-width: 768px) {
 
     .navLink {
@@ -60,5 +66,18 @@
 
     .content {
         width: 80%;
+    }
+
+    .logo {
+        height: 35px;
+        width:35px;
+    }
+
+    .menuIcon {
+        font-size: 22px;
+    }
+
+    .stickyHeader {
+        padding: 4px 0px;
     }
 }
